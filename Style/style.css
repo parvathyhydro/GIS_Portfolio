@@ -1,0 +1,632 @@
+
+
+
+/*-------Common--------*/
+
+html { height: 100%; }
+
+
+body {
+  
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;  
+}
+
+/*----------------------Header-----------------------*/
+header{
+  width: 100%;
+}
+.header-div{
+  width: 100%;
+  height: 26vh;
+  background-image: url("../Image/Contour_02.jpg"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-top: 1em; 
+  justify-content: center;
+  align-items: center;
+}
+
+.LinkedIn-logo{
+  width:2.2vw;
+  height: auto;
+  padding-bottom: 2.6vh;
+}
+
+.centered-div {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../Image/Contour_02.jpg"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-top: 1em; 
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: #ffffff; 
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+  margin-top: 10vh;
+  margin-left: 0.7vw;
+}
+
+.rounded-image {
+  border-radius: 50%; 
+  max-width: 10%; 
+}
+/*------------------- NavBar -----------------------*/
+.bg-body-tertiary {
+  background-color: transparent;
+  border: 0.2vh solid #005c8b;
+}
+
+.nav-link {
+  font-size: 2.6vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: #005c8b !important;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center align the navbar items */
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Align the line at the center of the nav-item */
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1vh; /* Adjust the thickness of the line */
+  background-color: transparent; /* Set initial color of the line */
+}
+
+.nav-item:hover::after {
+  background-color: #005c8b; /* Set color of the line on hover */
+}
+
+.dropdown .btn-secondary {
+  border: none;
+  background-color: transparent;
+  color: #005c8b;
+  font-size: 2.6vh;
+}
+.bg-body-tertiary {
+  background-color: transparent;
+  border: 0.2vh solid #005c8b;
+}
+
+.nav-link {
+  font-size: 2.6vh; /* Change to your preferred font size */
+  font-family: Arial, sans-serif; /* Change to your preferred font family */
+  position: relative;
+  text-decoration: none;
+  color: #005c8b !important;
+
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 11vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2.5vw;
+  width: 50%;
+  height: 1vh; /* Adjust the thickness of the line */
+  background-color: transparent; /* Set initial color of the line */
+}
+
+.nav-item:hover::after {
+  background-color: #005c8b; /* Set color of the line on hover */
+}
+.dropdown .btn-secondary {
+  border: none;
+  background-color: transparent;
+  color: #005c8b; /* Optionally, you can specify the color */
+  font-size: 2.6vh;
+}
+
+/*------------------- Footer -----------------------*/
+footer {
+  width: 100%;
+  height: 19.6vh;
+  background-color: #005c8b;
+  color: white;
+  text-align: center;
+}
+
+
+.footer-div{
+  
+  bottom: 0;
+  height: 10.4vh; 
+  color:white;
+  background-color: #005c8b; 
+  text-align: right;
+}
+
+.footer-text{
+  padding-right: 3vw;
+}
+
+/*------------------- main -----------------------*/
+
+main {
+  flex-grow: 1;
+  min-height: calc(100vh - 19.6vh); /* Adjust based on footer height */
+}
+
+/*------------------- Index -----------------------*/
+.about-me-container{
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3vh; 
+}
+
+.about-me {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: center;
+  font-size: 2.6vh;
+  color: #333;
+}
+.GIS_portfolio {
+  width:80vw;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  flex-direction: column; 
+}
+.card {
+  width: 18rem;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 0.73vw; /* Gap between grid items */
+  width:58.6vw;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16vw;
+}
+.box {
+  padding: 3.9vh;
+  border-radius: 0.36vw;
+  width:100%
+}
+
+.card {
+  align-items: center;
+  background-color: transparent !important; /* Remove background color */
+  border: none; /* Remove border */
+}
+
+
+.card-img-top{
+  
+  width:16rem;
+  height: 12rem;
+}
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-link:hover .card {
+  box-shadow: 0 0 0.73vw rgba(0, 0, 0, 0.1); /* Add a shadow effect to the card on hover */
+}
+
+/*------------------- Resume -----------------------*/
+
+.table-education{
+  border-color: #005c8b; 
+  border-collapse: collapse;
+}
+
+.table-skills
+.table-experience{
+  border-color: #005c8b; 
+  margin-top: 4vh; 
+  border-collapse: collapse;
+}
+
+.content-row{
+  border-bottom: 0.13vh solid #ccc;
+}
+
+.content-last-row{
+  border-bottom: 0.13vh solid #005c8b;
+}
+
+.University{
+  text-align: left; 
+  margin: 0; 
+  margin-left:4vw;
+}
+
+.University-logo{
+  height: 19vh;
+  width: auto;
+}
+
+.Fanshawe-University-logo{
+  height: 10vh;
+  width: auto;
+}
+
+.right-resume{
+  margin-left: 1.5vw;
+  margin-top:4vh;
+}
+
+.Edu-cont-para{
+  text-align: left; 
+  margin: 0; 
+  margin-left: 6vw;
+}
+
+.resume-right-img-row{
+  border-bottom: 0.1vh solid #ccc; 
+  padding: 5px; 
+  text-align: left;
+}
+
+.resume-right-img-last-row{
+  border-bottom: 0.1vh solid #005c8b; 
+  padding: 0.6vh; 
+  text-align: left;
+}
+
+.skills-logo{
+  height: 6.5vh; 
+  width: auto;
+}
+
+.resume-right-row{
+  border-bottom: 0.1vh solid #ccc; 
+  padding: 0.36vw; 
+  vertical-align: top; 
+  text-align: left;
+}
+
+.resume-right-last-row{
+  border-bottom: 0.1vh solid #005c8b; 
+  padding: 0.36vw; 
+  vertical-align: top; 
+  text-align: left;
+}
+
+.resume-container {
+  display: flex;
+  margin-left: 10vw;
+  text-align: center;
+  margin-bottom: 13vh; /* Add margin at the bottom to create space for the footer */
+}
+
+.education {
+  margin-top:3.9vh;
+  width: 30%; /* 30% width for education */
+  padding:2.1vw;
+  /* height: 800px;  */
+}
+
+.right-resume {
+  display: flex;
+  width:51vw;
+  padding: 2.1vw;
+  flex-direction: column; /* Stack the children vertically */
+}
+
+
+
+.skills {
+  width: 100%; /* Full width for skills */
+  /* height: 400px; */
+}
+
+.experience {
+  width: 100%; /* Full width for experience */
+  /* height: 400px;  */
+  margin-top:3.9vh;
+}
+
+.tableHead{
+  border-bottom: 0.26vh solid #005c8b; /* Add a blue border bottom */
+}
+
+#last-exp{
+  margin-bottom: 2.6vh;
+}
+
+/*------------------- Project Page -----------------------*/
+.carousel{
+justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.map-img{
+  margin-left: 2.2vw;
+  width: 45vw; 
+  height: auto; 
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    width: 3vw; /* Adjust as needed */
+    height: 5.2vh; /* Adjust as needed */
+    line-height: 5.2vh; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    color: white;
+    text-align: center;
+    font-size: 3.12vh; /* Adjust as needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.carousel-control-prev {
+    left: 0vw; 
+}
+
+.carousel-control-next {
+    right: 0vw;
+} 
+.project-desc{
+  margin-left: 2.2vw;
+  width: 45vw; 
+  margin-top: 2.6vh;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+.carousel-inner{
+  width: 45vw; 
+  height:auto;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+.carousel-item{
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.NSImg {
+  width:100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh; /* Add padding for spacing */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.header {
+  display: block;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: auto; /* Push the heading to the left */
+  margin-left: auto; /* Push the heading to the right */
+}
+
+.mapPage {
+  margin-top: 2.6vh; /* Add margin between header and map */
+  width: 45vw; 
+  height: auto; 
+  text-align: center;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.logo {
+  width: 14.6vw; /* Adjust width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 80vw; /* Push the logo to the right */
+}
+
+.mapPage img {
+  cursor: pointer; /* Change cursor to pointer when hovering over the image */
+}
+
+.mapPage img:hover {
+  transform: scale(1.1); /* Scale the image when hovering over it */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/*------------------- Contact -----------------------*/
+
+.icon{
+  float: left; 
+  margin-right: 1.5vw; 
+}
+
+.contact_para{
+  font-size: 2.6vh;
+  text-align:left;
+}
+
+.PageTitle{
+  font-family: 'Times New Roman', serif; 
+  font-size: 6.5vh;
+  text-align:left;
+}
+
+
+
+.contact-form {
+    background-color: rgb(244, 241, 241);
+    align-self: center;
+}
+
+#contactForm {
+    align-self: center;
+    margin-left: 29.3vw;
+}
+
+#email{
+    background-color: white;
+    margin-left: 2.7vw;
+}
+
+#name{
+    margin-left: 4.9vw;
+}
+
+#message {
+    margin-left: 1.5vw;
+}
+
+.submit{
+    margin-right: 36.6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- responsiveness-----------------------*/
+
+@media screen and (max-width: 950px) {
+  .LinkedIn-logo{
+    width: 6vw;
+  }
+  .right-resume {
+      padding: 2.1vw; /* Reset padding */
+      width: 100%; /* Set width to 100% to make it full-width */
+  }
+  .education{
+    padding: 2.1vw; /* Reset padding */
+    width: 100%; 
+    margin-right:0;
+    border-right: 0;
+  }
+  .resume-container {
+    display: block; /* Change display to block */
+    margin-left: auto;
+    margin-right: auto; /* Center the container */
+  }
+  .table-education{
+    width:100%
+  }
+  .card {
+    width: 100%;
+  }
+  .box{
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .GIS_portfolio{
+  display: block; 
+  }
+
+  .contact-section, .contact-form {
+  width: 100%; /* Make sections full width */
+  text-align: center; /* Center align text */
+  }
+  .contact-form {
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add padding for better spacing */
+  }
+  .icon {
+  float: none; /* Remove float for icons */
+  margin-right: 0; /* Reset margin for icons */
+  }
+  .contact_para {
+  font-size: 18px; /* Adjust font size */
+  }
+  #contactForm {
+  margin-left: auto; /* Center the form */
+  margin-right: auto;
+  width: 80%; /* Adjust form width */
+  }
+  #email, #name, #message {
+  width: 80%; /* Adjust input widths */
+  margin-left: auto; /* Center the inputs */
+  margin-right: auto;
+  }
+  .submit {
+  margin-right: 0; /* Reset margin for submit button */
+  }
+  .about-me {
+  width:100%;
+  margin-left: 0;
+  margin-right: 0;
+  }
+  .project-desc{
+  margin-left: 0;
+  width: 100%; 
+  }
+
+  .mapPage {
+    width: 100%;     
+  }
+
+  .navbar-nav{
+    margin-left: 50vw;
+  }
+
+  .img-fluid{
+    width: 100%;
+  }
+  .carousel-inner{
+    width: 100%;
+  }
+  #field_form{
+    margin-left: 25vw;
+    
+  }
+}
+
+
+
