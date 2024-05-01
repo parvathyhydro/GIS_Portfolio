@@ -626,6 +626,9 @@ justify-content: center; /* Center items horizontally */
     margin-left: 25vw;
     
   }
+  .mapPage {
+    width:100%;
+  }
 }
 
 
